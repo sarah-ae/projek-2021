@@ -17,7 +17,7 @@
 		$peratus = $_POST['peratus'];
 		$sql = "SELECT * FROM kuiz
 				JOIN pelajar ON kuiz.idpelajar = pelajar.idpelajar
-				JOIN kelas ON pelajar.idpelajar = kelas.idkelas GROUP BY kuiz.idpelajar ";
+				JOIN kelas ON pelajar.idkelas = kelas.idkelas GROUP BY kuiz.idpelajar ";
 
 		switch($pilihan) {
 			case 1 : $syarat = "";
